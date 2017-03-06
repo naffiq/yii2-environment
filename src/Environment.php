@@ -220,7 +220,7 @@ class Environment
         defined('YII_ENV_STAGE') or define('YII_ENV_STAGE', YII_ENV === 'stage');
 
         // Include Yii.
-        require($this->yiiPath);
+        require_once($this->yiiPath);
 
         // Set aliases.
         foreach ($this->aliases as $alias => $path) {
